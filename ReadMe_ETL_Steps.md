@@ -2,6 +2,8 @@
 
 Extract:
 Two CSV files were pulled from Kaggle where the user did some web scraping on Glassdoor to find job listings for 1) Data Analysts (https://www.kaggle.com/andrewmvd/data-analyst-jobs) and 2) Data Scientists (https://www.kaggle.com/andrewmvd/data-scientist-jobs). These two datasets were chosen to further our analysis of Project 1 into Project 2 in discovering what skillsets are looked for, what the salary ranges, and what the company revenue is currently as the new datasets are from 2020 while our previous analysis used datasets from 2018. Columns for both datasets were the same which help facilitated the merging. The files were then imported into Pandas using Jupyter Notebook and transformation was done.
+
+
 Transform:
 To transform the dataset, the following was done:
 csv1 = DataAnalyst.csv
@@ -26,6 +28,8 @@ b.      Revenue
 8.      New columns (“Revenue Midpoint” and “Salary Midpoint”) were created to store the mean between the “Revenue Bottom”/“Revenue Top” AND “Salary Bottom”/“Salary Top”, respectively.
 9.      New column “Salary Unit” was added to show the salary units.
 10.  The columns were reorganized in the order we wanted and exported as CSV.
+
+
 Load:
 1.      A database was created in PgAdmin called “ETL_Project”
 2.      A server connection was created in Jupyter Notebook
